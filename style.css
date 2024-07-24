@@ -1,0 +1,15 @@
+body {
+    padding-top: 50px;
+    background-image: url('https://www.bhartiaxa.com/sites/default/files/2023-02/bmi-scale.svg'); /* Add the path to your background image */
+    background-size: cover; /* Adjust the image size to cover the whole background */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Make the background image stay fixed during scrolling */
+}
+.result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}

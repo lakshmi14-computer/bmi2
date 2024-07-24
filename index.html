@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center"><b>BMI Calculator</b></h1>
+
+                <form id="bmiForm">
+                    <div class="form-group">
+                        <label for="height"><b>Height (in cm):</b></label>
+                        <input type="number" class="form-control" id="height" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight"><b>Weight (in kg):</b></label>
+                        <input type="number" class="form-control" id="weight" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Calculate BMI</button>
+                </form>
+                <div id="result" class="result text-center"></div>
+                <div class="progress mt-4">
+                    <div id="bmiProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="40"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
